@@ -84,8 +84,16 @@ print(snake_to_camel('hello_world'))
 
 
 def longest_word_length(words):
-    pass  # TODO: replace this line with your code
 
+    longest = len(words[0])
+
+    for word in words:
+        if longest < len(word):
+            longest = len(word)
+
+    return longest
+    
+print(longest_word_length(['jelly', 'fish', 'jellyfish', 'zebra']))
 
 def truncate(string):
     pass  # TODO: replace this line with your code
