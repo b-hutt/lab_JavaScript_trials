@@ -2,20 +2,47 @@
 
 
 def output_all_items(items):
-    pass  # TODO: replace this line with your code
+    
+    for item in items:
+        print(item)
+
+output_all_items([1, 'hello', True])
 
 
 def get_all_evens(nums):
-    pass  # TODO: replace this line with your code
+    
+    even_nums = []
+
+    for num in nums:
+        if num % 2 == 0:
+            even_nums.append(num)
+
+    return even_nums
+
+print(get_all_evens([7, 8, 10, 1, 2, 2]))
 
 
 def get_odd_indices(items):
-    pass  # TODO: replace this line with your code
+    result = []
+
+    for idx, item in enumerate(items):
+        if idx % 2 != 0:
+            result.append(item)
+
+    return result
+
+print(get_odd_indices([1, 'hello', True, 500]))
 
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+    
+    i = 1
 
+    for item in items:
+        print(f'{i}. {item}')
+        i += 1
+
+print_as_numbered_list([1, 'hello', True])
 
 def get_range(start, stop):
     pass  # TODO: replace this line with your code
