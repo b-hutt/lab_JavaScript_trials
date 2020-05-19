@@ -74,11 +74,11 @@ def snake_to_camel(string):
    
     camelCase = []
 
-    for word of string.split('_')
+    for word in string.split('_'):
         print (word)
-        camelCase.extend(word)
+        camelCase.extend([word.title()])
 
-
+    return "".join(camelCase)
 
 print(snake_to_camel('hello_world'))
 
