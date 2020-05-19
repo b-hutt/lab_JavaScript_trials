@@ -47,12 +47,12 @@ print_as_numbered_list([1, 'hello', True])
 def get_range(start, stop):
     nums = []
 
-    for num in range(start:stop):
+    for num in range(start, stop):
         nums.append(num)
 
     return nums
 
-print(get_range(0:5))
+print(get_range(0, 5))
 
 
 def censor_vowels(word):
