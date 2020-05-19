@@ -45,7 +45,14 @@ def print_as_numbered_list(items):
 print_as_numbered_list([1, 'hello', True])
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+    nums = []
+
+    for num in range(start:stop):
+        nums.append(num)
+
+    return nums
+
+print(get_range(0:5))
 
 
 def censor_vowels(word):
