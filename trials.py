@@ -71,7 +71,16 @@ print(censor_vowels('hello world'))
 
 
 def snake_to_camel(string):
-    pass  # TODO: replace this line with your code
+   
+    camelCase = []
+
+    for word of string.split('_')
+        print (word)
+        camelCase.extend(word)
+
+
+
+print(snake_to_camel('hello_world'))
 
 
 def longest_word_length(words):
